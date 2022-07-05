@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+  <head>
+    <title>Maths game!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="score">
+        Score: <span id="scoreValue">0</span>
+      </div>
+      <div id="correct">
+        Correct!
+      </div>
+      <div id="wrong">
+        Try again!
+      </div>
+      <div id="question">
+        <span id="firstNumber"></span>
+        <span id="operator"></span>
+        <span id="secondNumber"></span>
+      </div>
+      <div id="instruction">
+        Click on the correct answer
+      </div>
+      <div id="choices">
+        <div id="box1" class="box" onclick="boxClick1(); xCheck()">
+          <span id="box1Value"></span>
+        </div>
+        <div id="box2" class="box" onclick="boxClick2(); xCheck()">
+          <span id="box2Value"></span>
+        </div>
+        <div id="box3" class="box" onclick="boxClick3(); xCheck()">
+          <span id="box3Value"></span>
+        </div>
+        <div id="box4" class="box" onclick="boxClick4(); xCheck(); clearI()">
+          <span id="box4Value"></span>
+        </div>
+      </div>
+      <div id="startReset" onclick="startGameCode()">
+        <span id="startOrReset">Start</span> game!
+      </div>
+      <div id="timeRemaining">
+        Time remaining: <span id="timeValue">60</span> sec
+      </div>
+      <div id="gameOver">
+        <p>game over!</p>
+         <p>you scored: <span id="finalScore">0</span></p>
+      </div>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+
+</html>
